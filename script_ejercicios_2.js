@@ -21,7 +21,8 @@ const nPalabrasRepetidas = (texto = "", palabra = undefined) => {
     hora de detectar la palabra*/
     let signos = /[.,\/#!$%¿?\^&\*;:{}=\-_`~()”“"…]/g
 
-    //Uso esto en los comparadores para detectar si la palabra se encuentra tanto con inicial mayúscula como con inicial minúscula
+    /*Uso esto en los comparadores para que el usuario tenga la opción de asignar al parametro "palabra", un argumento escrito tanto con inicial mayúscula como con inicial
+    minúscula sin tener ningún problema*/
     let inicialMayuscula = palabra.charAt(0).toUpperCase() + palabra.slice(1);
     let iniciaMinuscula = palabra.charAt(0).toLowerCase() + palabra.slice(1);
 
