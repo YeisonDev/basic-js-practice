@@ -49,8 +49,6 @@ const convertirGrados = (grados=undefined, unidad = undefined) => {
     if (typeof unidad !== "string") return console.error(`El valor ${unidad}, no es aceptado. Ingresa "C" o "F"`)
     if (typeof unidad.length !== 1 && !/[CF]/.test(unidad)) return console.error(`El valor ${unidad} no es aceptado. Por favor ingresa "C" o "F"`)
 
-
-
     if (unidad === "C") {
         return console.info(`${grados}°C = ${Math.round((grados*1.8)+32)}°F`)
     } else {
