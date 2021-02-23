@@ -9,9 +9,6 @@ randomNumber(1, 10)
 
 
 
-
-
-
 // 10) Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro), pe. miFuncion(2002) devolverá true.
 const esCapicua = (numero = 0) => {
     let reverse = numero.toString().split("").reverse().join("");
@@ -40,8 +37,6 @@ esCapicua("2002") //-> ¡El número 2002, es capicúa!👍
 esCapicua("queso") //-> queso, no es un número 🤨
 esCapicua(222.222) //-> ¡El número 222.222, es capicúa!👍
 esCapicua("hola1") //-> hola1 contiene letras y números. Por favor introducir solamente números 😠
-
-
 
 
 
