@@ -16,7 +16,7 @@ const convertirBinarioDecimal = (numero=undefined, base=undefined) => {
 
 }
 
-/* convertirBinarioDecimal() //-> No ingresaste un número a convertir
+convertirBinarioDecimal() //-> No ingresaste un número a convertir
 convertirBinarioDecimal("100") //-> El valor 100 ingresado, NO es un número
 convertirBinarioDecimal(100) //-> no ingresaste la base a convertir
 convertirBinarioDecimal(100, "2") //-> El valor 2 ingresado, NO es un número
@@ -25,7 +25,7 @@ convertirBinarioDecimal(1110010, 2) //-> 1110010 base 2 es igual a 114 base 10 (
 convertirBinarioDecimal(114,10) //-> 114 base 10 es igual a 1110010 base 2 (binario)
 convertirBinarioDecimal(4, 10) //-> 4 base 10 es igual a 100 base 2 (binario)
 convertirBinarioDecimal(4, 3) //-> El tipo de base a convertir no es valido
-*/
+
 
 
 
@@ -42,14 +42,13 @@ const descuento = (valor=0, descuento=0) => {
     return console.info(`El precio de su producto de $${valor.toFixed(2)} con el %${descuento} de descuento es: $${(valor-(valor*descuento/100)).toFixed(2)}`)
 }
 
-/* descuento() //-> Introduce el precio del producto
+descuento() //-> Introduce el precio del producto
 descuento("mil", 20) //-> mil no es un número. Introduce el precio en números
 descuento(1000,"dos") //-> dos no es un número. Por favor introducir el porcentaje a descontar en números
 descuento(1000, 20) //-> El precio de su producto de $1000.00 con el %20 de descuento es: $800.00
 descuento(75,-25) //-> El monto no puede ser negativo
 descuento(0.20) //-> No has introducido el porcentaje a descontar
 descuento(40, 10) //-> El precio de su producto de $40.00 con el %10 de descuento es: $36.00
-*/
 
 
 
