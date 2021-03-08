@@ -4,7 +4,10 @@ const arrayDesAsc = (arr=undefined) =>  {
     if (arr === undefined) return console.error("No has introducido el arreglo");
     if (arr.length === 0) return console.warn("El arreglo esta vacío")
     if (!(arr instanceof Array)) return console.error("Los datos ingresados no son un arreglo");
-    if (/[A-z]/g.test(arr)) return console.error("El array introducido no contiene números")
+    
+    for(num of arr) {
+        if(typeof num !== "number") return console.error("El arreglo introducido debe contener solamente números")
+    }
 
     let asc = arr.map(e=>e).sort((a,b)=>a-b);
     let des = arr.map(e=>e).sort((a,b)=>b-a)
@@ -58,7 +61,10 @@ const promedio = (arr=undefined) => {
     if (arr === undefined) return console.error("No has introducido el arreglo");
     if (arr.length === 0) return console.warn("El arreglo esta vacío")
     if (!(arr instanceof Array)) return console.error("Los datos ingresados no son un arreglo");
-    if (/[A-z]/g.test(arr)) return console.error("El arreglo introducido debe contener solamente números") 
+    
+    for(num of arr) {
+        if(typeof num !== "number") return console.error("El arreglo introducido debe contener solamente números")
+    }
 
     let suma = arr.reduce((a,b) => a + b, 0); 
     
